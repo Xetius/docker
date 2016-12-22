@@ -11,3 +11,5 @@ RUN mv jetty-distribution-${JETTY_VERSION} ${JETTY_HOME}
 
 WORKDIR ${JETTY_HOME}
 
+ENTRYPOINT ["java", "-jar", "start.jar"]
+
